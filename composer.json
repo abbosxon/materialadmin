@@ -1,0 +1,31 @@
+{
+  "name": "abbosxon/yii2-material-admin",
+  "description": "My first repository",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "materialadmin",
+    "theme",
+    "backend",
+    "asset",
+    "css"
+  ],
+  "license": "BSD 3-Clause License",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Abbosxon Isoqov",
+      "email": "abbosxon.isoqov@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "abbosxon\\materialadmin\\": ""
+    }
+  },
+  "require": {
+    "yiisoft/yii2": "2.*",
+    "yiisoft/yii2-bootstrap": "~2.0.0"
+  }
+}
