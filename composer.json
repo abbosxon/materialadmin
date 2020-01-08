@@ -11,7 +11,6 @@
     "asset",
     "css"
   ],
-  "license": "BSD 3-Clause License",
   "minimum-stability": "dev",
   "authors": [
     {
