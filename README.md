@@ -21,7 +21,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install the Material Admin Asset run:
 
 ```
-composer require abbosxon/yii2-material-admin "^1.0"
+composer require abbosxon/yii2-material-admin "dev-master"
 ```
 
 
