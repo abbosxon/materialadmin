@@ -87,7 +87,7 @@ class MaterialAdminAsset extends AssetBundle
         // more plugin CSS here
     ];
     public $depends = [
-        'materialadmin\assets\MaterialAsset',
+        'abbosxon\materialadmin\assets\MaterialAsset',
     ];
 }
 ```
