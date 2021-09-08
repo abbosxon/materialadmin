@@ -34,8 +34,8 @@ use yii\widgets\ActiveForm;
     }
 } ?>
     </div>
-    <div class="card-body-footer">
-        <?= "<?= " ?>Html::submitButton(<?= $generator->generateString('Save') ?>, ['class' => 'btn btn-success btn-flat']) ?>
+    <div class="form-group form-buttons">
+        <?= "<?= " ?>Html::submitButton(<?= $generator->generateString('Save') ?>, ['class' => 'btn btn-success']) ?>
     </div>
     <?= "<?php " ?>ActiveForm::end(); ?>
 </div>
