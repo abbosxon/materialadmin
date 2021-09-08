@@ -21,10 +21,12 @@ $this->params['breadcrumbs'][] = ['label' => <?= $generator->generateString(Infl
 $this->params['breadcrumbs'][] = ['label' => $model-><?= $generator->getNameAttribute() ?>, 'url' => ['view', <?= $urlParams ?>]];
 $this->params['breadcrumbs'][] = <?= $generator->generateString('Update') ?>;
 ?>
-<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-update">
-
+<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-update card">
+    <div class="card-head card-head-sm style-primary">
+        <header><?= "<?= " ?>$this->title ?></header>
+    </div>
+    <div class="card-body">
     <?= "<?= " ?>$this->render('_form', [
         'model' => $model,
     ]) ?>
-
 </div>

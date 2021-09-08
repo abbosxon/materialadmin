@@ -24,7 +24,8 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
 <?php if ($generator->enablePjax): ?>
         'options' => [
-            'data-pjax' => 1
+            'data-pjax' => 1,
+            'class' => 'form'
         ],
         'fieldConfig' => ['template' => "{input}\n{label}\n{hint}\n{error}", 'options' => ['class' => 'form-group col-md-12']],
 <?php endif; ?>

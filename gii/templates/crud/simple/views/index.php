@@ -23,12 +23,12 @@ use <?= $generator->indexWidgetType === 'grid' ? "yii\\grid\\GridView" : "yii\\w
 $this->title = <?= $generator->generateString(Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass)))) ?>;
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-index box box-primary">
+<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-index card">
 <?= $generator->enablePjax ? "    <?php Pjax::begin(); ?>\n" : ''
-?>    <div class="box-header with-border">
-        <?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success btn-flat']) ?>
+?>    <div class="card-head card-head-sm style-primary">
+        <header><?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success btn-flat']) ?></header>
     </div>
-    <div class="box-body table-responsive no-padding">
+    <div class="card-body table-responsive no-padding">
 <?php if(!empty($generator->searchModelClass)): ?>
 <?= "        <?php " . ($generator->indexWidgetType === 'grid' ? "// " : "") ?>echo $this->render('_search', ['model' => $searchModel]); ?>
 <?php endif;

@@ -24,9 +24,9 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-form box box-primary">
-    <?= "<?php " ?>$form = ActiveForm::begin(['fieldConfig' => ['template' => "{input}\n{label}\n{hint}\n{error}", 'options' => ['class' => 'form-group col-md-12']],]); ?>
-    <div class="box-body table-responsive">
+<div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-form ">
+    <?= "<?php " ?>$form = ActiveForm::begin(['options' => ['class' => 'form'],'fieldConfig' => ['template' => "{input}\n{label}\n{hint}\n{error}", 'options' => ['class' => 'form-group col-md-12']],]); ?>
+    <div class="table-responsive">
 
 <?php foreach ($generator->getColumnNames() as $attribute) {
     if (in_array($attribute, $safeAttributes)) {
@@ -34,7 +34,7 @@ use yii\widgets\ActiveForm;
     }
 } ?>
     </div>
-    <div class="box-footer">
+    <div class="card-body-footer">
         <?= "<?= " ?>Html::submitButton(<?= $generator->generateString('Save') ?>, ['class' => 'btn btn-success btn-flat']) ?>
     </div>
     <?= "<?php " ?>ActiveForm::end(); ?>
