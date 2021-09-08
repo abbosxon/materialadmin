@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-index card">
 <?= $generator->enablePjax ? "    <?php Pjax::begin(); ?>\n" : ''
 ?>    <div class="card-head card-head-sm style-primary">
-        <header><?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success btn-flat']) ?></header>
+        <header><?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success']) ?></header>
     </div>
     <div class="card-body table-responsive no-padding">
 <?php if(!empty($generator->searchModelClass)): ?>

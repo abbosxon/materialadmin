@@ -25,9 +25,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="card">
         <div class="card-body">
             <?= "<?= " ?>Html::a(<?= $generator->generateString('Update') ?>, ['update', <?= $urlParams ?>], ['class' =>
-            'btn btn-primary btn-flat']) ?>
+            'btn btn-primary']) ?>
             <?= "<?= " ?>Html::a(<?= $generator->generateString('Delete') ?>, ['delete', <?= $urlParams ?>], [
-                'class' => 'btn btn-danger btn-flat',
+                'class' => 'btn btn-danger',
                 'data' => [
                     'confirm' => <?= $generator->generateString('Are you sure you want to delete this item?') ?>,
                     'method' => 'post',
